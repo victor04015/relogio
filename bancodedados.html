@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="banco.css">
+    <title>Planilha de Slots</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Cor de fundo preto */
+            color: #fff; /* Cor do texto branco */
+            padding: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 1px #000; /* Sombra para o texto */
+        }
+
+        h1 {
+            color: #ff9900; /* Cor do título laranja */
+        }
+
+        #clock {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        #clock input {
+            width: 40px;
+            margin-right: 5px;
+            text-align: center;
+        }
+
+        table {
+            margin-top: 160px;
+            border-collapse: collapse;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            color: #000; /* Cor do texto preto na tabela */
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            color: #000; /* Cor do texto preto */
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="date"]:focus {
+            outline: none;
+            background-color: #ff9900; /* Cor de fundo laranja quando focado */
+            color: white; /* Cor do texto branco quando focado */
+        }
+
+        a {
+            color: #ff9900; /* Cor dos links laranja */
+        }
+
+        a:hover {
+            color: #fff; /* Cor dos links branco quando hover */
+        }
+
+        #message {
+            position: fixed;
+            top: 80px;
+            left: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Banco Central do Brasil</h1>
+    <div id="clock"></div>
+    <div id="message">Houve um atraso na plataforma para os pagamentos do dia 13/11/2023. Irá cair junto com o do dia 14/11/2023.</div>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>ID do Comprovante</th>
+            <th>Valor a Receber</th>
+            <th>Data</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome1" value="Rodrigo Neu do Carmo"></td>
+            <td><input type="text" name="idTransacao1" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor1" value="18.782,00"></td>
+            <td><input type="date" name="data1" value="2023-11-13"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome2" value="Wanderson Carlos Soares dos Santos"></td>
+            <td><input type="text" name="idTransacao2" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor2" value="90.820,00"></td>
+            <td><input type="date" name="data2" value="2023-11-13"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome3" value="Charles Luís Steinke"></td>
+            <td><input type="text" name="idTransacao3" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor3" value="6.326,00"></td>
+            <td><input type="date" name="data3" value="2023-11-14"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome4" value="Elaine J. Nascimento"></td>
+            <td><input type="text" name="idTransacao4" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor4" value="35.418,00"></td>
+            <td><input type="date" name="data4" value="2023-11-13"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome5" value="Diogo Denian da Silva Barbosa"></td>
+            <td><input type="text" name="idTransacao5" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor5" value="5.885,00"></td>
+            <td><input type="date" name="data5" value="2023-11-14"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome6" value="Eduardo Barboza Santos Bispo"></td>
+            <td><input type="text" name="idTransacao6" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor6" value="21.537,00"></td>
+            <td><input type="date" name="data6" value="2023-11-14"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome7" value="Humberto Jose S Goulart"></td>
+            <td><input type="text" name="idTransacao7" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor7" value="1.347,00"></td>
+            <td><input type="date" name="data7" value="2023-11-14"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome8" value="Carlos Alberto Steinke"></td>
+            <td><input type="text" name="idTransacao8" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor8" value="2.502,00"></td>
+            <td><input type="date" name="data8" value="2023-11-14"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome9" value="Valter Pereira Júnior"></td>
+            <td><input type="text" name="idTransacao9" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor9" value="5.400,00"></td>
+            <td><input type="date" name="data9" value="2023-11-14"></td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nome10" value="Eliseu Jose da Rosa"></td>
+            <td><input type="text" name="idTransacao10" value="(ID do Comprovante)"></td>
+            <td><input type="text" name="valor10" value="1.386,00"></td>
+            <td><input type="date" name="data10" value="2023-11-14"></td>
+        </tr>
+    </table>
+
+    <script>
+        function atualizarRelogio() {
+            var horas = 19;
+            var minutos = 32;
+            var segundos = 10;
+    
+            function formatarNumero(num) {
+                return num < 10 ? "0" + num : num;
+            }
+    
+            function atualizarTempo() {
+                var horaFormatada = formatarNumero(horas) + ":" + formatarNumero(minutos) + ":" + formatarNumero(segundos);
+    
+                document.getElementById("clock").innerHTML = horaFormatada;
+            }
+    
+            function atualizarContagemRegressiva() {
+                if (segundos > 0) {
+                    segundos--;
+                } else {
+                    if (minutos > 0) {
+                        minutos--;
+                        segundos = 59;
+                    } else {
+                        if (horas > 0) {
+                            horas--;
+                            minutos = 59;
+                            segundos = 59;
+                        }
+                    }
+                }
+    
+                atualizarTempo();
+                setTimeout(atualizarContagemRegressiva, 1000);
+            }
+    
+            atualizarContagemRegressiva();
+        }
+    
+        window.onload = function() {
+            atualizarRelogio();
+        };
+    </script>
+    
+</body>
+</html>
